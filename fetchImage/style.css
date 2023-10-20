@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Inconsolata:wght@500;600&family=Noto+Sans+Multani&family=Open+Sans:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,600&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+form #input-search {
+    min-width:160px;
+    width: 20vw;
+    padding: 0.2rem 0.3rem;
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+    margin-right: 1.2rem;
+}
+
+form #search-button {
+    border: none;
+    padding: 0.2rem 0.6rem;
+    background-color: rgb(75, 180, 241);
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+form #search-button:hover {
+    letter-spacing: 1px;
+    background-color: aquamarine;
+    color: rgb(139, 142, 144);
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.container .search-result {
+    width: 25%;
+    height:25vw;
+    padding: 0.2rem;
+    background-color: #eae5e5;
+    margin: 2rem;
+    object-fit: cover;
+
+}
+
+.container .search-result img {
+    width: 100%;
+ height: 100%;
+    object-fit: cover;
+}
+.container .search-result:hover img {
+     opacity: 0.7;
+}
+.container .search-result a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding:0.6rem 0;
+    color: #333;
+    margin-bottom: 2rem;
+   }
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.btn #nextBtn{
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3rem;
+    background-color: aquamarine;
+    display: none;
+}
+.btn #nextBtn:hover{
+    letter-spacing: 1px;
+    background-color: rgb(31, 104, 80);
+    color: grey;
+    border-radius: 1.2rem;
+}
+@media (max-width:768px) {
+    .container .search-result {
+        width:35vw;
+        height:40vw;
+        padding: 0.2rem;
+        background-color: #ddd;
+        margin: 2rem;
+        object-fit: cover;
+
+    }
+    
+}
+
+@media (max-width:400px) {
+    .container .search-result {
+        width: 20rem;
+        height:60vw;
+        padding: 0.2rem;
+        background-color: #ddd;
+        margin: 2rem;
+        object-fit: cover;
+
+    }
+    
+}
